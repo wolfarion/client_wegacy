@@ -1,0 +1,87 @@
+<div class="homepageContainer">
+	<div class="dashboard">
+		<div class="logo" ng-click="showHomepage()">Wegacy</div>
+		<div class="pointMenu">
+			<div class="profile_icon icon"></div>Profile
+		</div>
+		<div class="pointMenu">
+			<div class="newpost_icon icon"></div>New post
+		</div>
+		<div class="pointMenu">
+			<div class="genealogy_icon icon"></div>Genealogy
+		</div>
+		<div class="pointMenu">
+			<div class="messages_icon icon"></div>Messages
+		</div>
+		<div class="pointMenu">
+			<div class="notifications_icon icon"></div>Notifications<div class="degree">8</div>
+		</div>
+	</div>
+	<div class="slider">
+		<div class="image" id="image"></div>
+		<div class="shadow">
+			<div class="name">by eva adams and 123 others</div>
+			<div class="title">Sed ut perspiciatis unde omnis iste natu</div>
+			<div class="pagination">
+				<div class="active" id="1" onclick="javascript: changeSlider(1)"></div>
+				<div class="element" id="2" onclick="javascript: changeSlider(2)"></div>
+				<div class="element" id="3" onclick="javascript: changeSlider(3)"></div>
+				<div class="element" id="4" onclick="javascript: changeSlider(4)"></div>
+				<div class="element" id="5" onclick="javascript: changeSlider(5)"></div>
+			</div>
+		</div>
+	</div>
+	<div class="columns">
+	    <div class="content">
+	    	<div class="post" ng-repeat="item in items">
+	    		<div class="image"><div class="author">{{item.author}}<br/>{{item.date}}</div></div>
+	    		<div class="text">{{item.text}}</div>
+	    		<div class="info">
+	    			<div class="module">
+	    				<div class="title">Liked</div>
+	    				<div class="number">{{item.liked}}</div>
+	    			</div>
+	    			<div class="module">
+	    				<div class="title">Shared</div>
+	    				<div class="number">{{item.shared}}</div>
+	    			</div>
+	    			<div class="module">
+	    				<div class="title">Comments</div>
+	    				<div class="number">{{item.comments}}</div>
+	    			</div>
+	    		</div>
+	    	</div>
+	    </div>
+	    <div class="search">
+	    	<div class="head">
+	    		<input placeholder="SEARCH"/>
+	    	</div>
+	    </div>
+	   </div>
+	<div class="footer">
+		<div class="logo">Wegacy</div>
+		<div class="line"></div>
+		<div class="listLink">
+			<ul>
+				<li>What is Wegacy?</li>
+				<li>Team</li>
+				<li>Blog</li>
+				<li>Investor Relations</li>
+				<li>Press</li>
+			</ul>
+			<ul>
+				<li>Terms of Service</li>
+				<li>Privacy Policy</li>
+				<li>FAQs</li>
+				<li>Jobs</li>
+				<li>Contact Us</li>
+			</ul>
+		</div>
+		<div class="copy">&#169 and &#174 Wegacy, Inc. All rights reserved.</div>
+		<div class="social">
+			<div class="fb elem"></div>
+			<div class="instagram elem"></div>
+			<div class="twitter elem"></div>
+		</div>
+	</div>
+</div>
